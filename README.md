@@ -6,12 +6,12 @@ adapted to a blog/news/interest site. Generally speaking one should
 be able to easily take this and adapt it to their needs.
 
 ##Goals
-*Sign-in via Google and Devise
-*Roles via Cancan (Admin, Author, Reader)
-*Articles - Using a rich text editor
-*Comments
-*Tagging System
-*Style (Bootstrap)
+* Sign-in via Google and Devise
+* Roles via Cancan (Admin, Author, Reader)
+* Articles - Using a rich text editor
+* Comments
+* Tagging System
+* Style (Bootstrap)
 
 ##Setup
 
