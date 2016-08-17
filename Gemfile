@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem "omniauth-google-oauth2"
 # Use Devise for main authorization
 gem 'devise', '4.2.0'
 
