@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+#Use Bootstrap for CSS Framework
+gem 'bootstrap-sass', '3.3.6'
+
+#Use Google for logging in and out
 gem "omniauth-google-oauth2"
 # Use Devise for main authorization
 gem 'devise', '4.2.0'
