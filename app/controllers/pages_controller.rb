@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+    skip_authorization_check
+  
     def home
         @categories = Category.all
         @articles = Article.last 9

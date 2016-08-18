@@ -1,6 +1,7 @@
 class FeaturedArticlesController < ApplicationController
   before_action :set_featured_article, only: [:show, :edit, :update, :destroy]
-
+  load_and_authorize_resource
+  
   # GET /featured_articles
   # GET /featured_articles.json
   def index

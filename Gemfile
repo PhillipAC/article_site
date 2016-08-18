@@ -10,6 +10,8 @@ gem 'bootstrap-sass', '3.3.6'
 gem "omniauth-google-oauth2"
 # Use Devise for main authorization
 gem 'devise', '4.2.0'
+#use Cancan for roles
+gem 'cancancan', '1.15'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  root 'pages#home'
+  get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
   resources :featured_articles
   resources :categories
   resources :tags
-  resources :comments
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
   
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   
@@ -14,7 +18,6 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
