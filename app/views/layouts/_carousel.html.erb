@@ -1,0 +1,12 @@
+<div class="owl-carousel">
+    <% object.each do |o| %>
+        <div>
+        <%= image_tag object.image %>
+        <%= object.title %>
+        </div>
+    <% end %>
+</div>
+
+<script>
+    $(".owel-carousel").owelCarousel();
+</script>

@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Use Owlcarousel for featured articles
+gem 'owlcarousel-rails'
+
 #Use Bootstrap for CSS Framework
 gem 'bootstrap-sass', '3.3.6'
 
