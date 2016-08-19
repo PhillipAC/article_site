@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Use CKeditor for Rich Text Editor
+gem 'ckeditor'
+gem 'paperclip'
 #Use Will_Paginate for pagination
 gem 'will_paginate', '3.1.0'
 

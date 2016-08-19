@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root 'pages#home'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
