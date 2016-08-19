@@ -96,3 +96,10 @@ $dropDown       : true;
         color: $colHighlight;
         background-color: $bgHighlight; }}}
 }
+
+//Article Preview
+.preview{
+  img {
+    float: left;
+  }
+}

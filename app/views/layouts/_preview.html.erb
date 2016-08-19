@@ -1,0 +1,9 @@
+<div class="preview">
+    <%= link_to image_tag(article.image, size: ("100")), article %>
+    <%= link_to article.title, article, class: "h2" %><br>
+    <br>
+    <%= truncate article.content, :length => 125, :separator => ' ' %>
+    <br>
+    <%= link_to 'MORE', article, class: 'h4' %>
+</div>
+<hr></hr>

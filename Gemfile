@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Use Will_Paginate for pagination
+gem 'will_paginate', '3.1.0'
+
 #Use Owlcarousel for featured articles
 gem 'owlcarousel-rails'
 
