@@ -2,7 +2,7 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    can :read, [Article, Category, Comment, FeaturedArticle, Tag]
+    can :read, [Article, Category, Comment, Tag]
     
     user ||= User.new # guest user (not logged in)
     if user.admin?
@@ -16,7 +16,7 @@ class Ability
         comment.user == user
       end
     elsif User.exists?(user)
-      can :create, Article
+      can :create, Comment
       can [:update, :destroy], Comment do |comment|
         comment.user == user
       end

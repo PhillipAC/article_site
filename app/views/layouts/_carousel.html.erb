@@ -1,12 +1,22 @@
-<div class="owl-carousel">
+<div class="owl-carousel center">
     <% object.each do |o| %>
         <div>
-        <%= image_tag object.image %>
-        <%= object.title %>
+        <%= image_tag o.image, size: ("400") %>
+        <br><h2><%= o.article.title %></h2>
         </div>
     <% end %>
 </div>
 
 <script>
-    $(".owel-carousel").owelCarousel();
+$(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        autoPlaySpeed:5000,
+        autoPlayTimeout: 5000,
+        autoplayHoverPause:true
+    });
+});
 </script>

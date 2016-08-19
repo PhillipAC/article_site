@@ -13,7 +13,7 @@
     	</ul>
     	<ul class="nav navbar-nav navbar-right">
     	    <% if user_signed_in? %>
-    	        <li><%=link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                <%= render 'layouts/dropdown' %>
     	    <% else %>
     	        <li><%=link_to "Login", user_google_oauth2_omniauth_authorize_path %></li>
     	    <% end%>

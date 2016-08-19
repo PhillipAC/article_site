@@ -3,9 +3,9 @@
 <% @articles.in_groups_of(3).each do |group| %>
   <div class="row">
       <% group.each do |article| %>
-        <% if item %>
+        <% if article %>
           <div class="col-sm-4 center padded">
-            <%= link_to image_tag(article.image, size: ("200")), article %><br>
+            <%= link_to image_tag(article.image, size: ("300")), article %><br>
             <%= link_to article.title, article, class: "center h2"%>
             <br>
           </div>

@@ -8,6 +8,17 @@ $colDefault     : #ecf0f1;
 $colHighlight   : #dbfdff;
 $dropDown       : true;
 
+.center {
+    text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+
+.padded{
+  padding-bottom: 20px;
+}
+
 .navbar-inverse {
     text-align: center;
     .navbar-center {

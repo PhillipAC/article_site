@@ -1,3 +1,3 @@
 class FeaturedArticle < ActiveRecord::Base
-    has_one :article
+    belongs_to :article
 end
