@@ -6,8 +6,6 @@
     <li><%=link_to "Account", "#"%></li>
     <% if can? :create, Article %>
         <li><%=link_to "Create Article", new_article_path %></li>
-    <% end %><% if can? :manage, FeaturedArticle %>
-        <li><%=link_to "Featured Articles", featured_articles_path %></li>
     <% end %>
     <li role="separator" class="divider"></li>
     <li><%=link_to "Logout", destroy_user_session_path, method: :delete %></li>
