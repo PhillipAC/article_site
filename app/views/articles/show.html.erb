@@ -2,7 +2,7 @@
 
 <h1 class="center"><%=@article.title%></h1>
 <h4 class="center">By <%=@article.user.name %> on <%=@article.created_at%></h3>
-<div class="article">
+<div class="article show wordwrap">
   <%= @article.content.html_safe %>
 </div>
 <% if can? :edit, @article %>

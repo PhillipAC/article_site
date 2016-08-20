@@ -25,10 +25,9 @@
     <header class="nav navbar-inverse">
     <div class="container">
         <ul class="nav navbar-center navbar-nav">
-            <li><%=link_to "Action", "#"%></li>
-            <li><%=link_to "Love", "#"%></li>
-            <li><%=link_to "Science", "#"%></li>
-            <li><%=link_to "Justice", "#"%></li>
+            <% @featured_categories.each do |c| %>
+                <li><%= link_to c.title, c %></li>
+            <% end %>
         </ul>
     </div>
     </header>

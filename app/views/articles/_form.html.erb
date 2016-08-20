@@ -19,6 +19,10 @@
     <%= f.text_field :image %>
   </div>
   <div class="field">
+    <%= f.label "Category" %>
+    <%= f.collection_select "category_id", Category.all, :id, :title %>
+  </div>
+  <div class="field">
     <%= f.cktext_area :content %>
   </div>
   <div class="actions">

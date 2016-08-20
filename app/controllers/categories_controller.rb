@@ -11,6 +11,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @articles = @category.articles.paginate(:page => params[:page], :per_page => 4)
   end
 
   # GET /categories/new
@@ -70,6 +71,6 @@ class CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def category_params
-      params.require(:category).permit(:title)
+      params.require(:category).permit(:title, :image)
     end
 end
