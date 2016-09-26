@@ -17,7 +17,7 @@
     	    <% else %>
     	        <li><%=link_to "Login", user_google_oauth2_omniauth_authorize_path %></li>
     	    <% end%>
-    	    <% if current_user.admin? %>
+    	    <% if user_signed_in? and current_user.admin? %>
     	        <%= render 'layouts/admin' %>
     	    <% end %>
     	    <li><%=link_to "Articles", articles_path %></li>

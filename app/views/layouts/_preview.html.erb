@@ -5,5 +5,10 @@
     <%= truncate strip_tags( article.content) , :length => 125, :separator => ' ' %>
     <br>
     <%= link_to 'MORE', article, class: 'h4' %>
+    <% if can? :delete, article %>
+        | 
+        <%= link_to('Delete', article,
+              method: "delete", data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
+    <% end %>
 </div>
 <hr></hr>
