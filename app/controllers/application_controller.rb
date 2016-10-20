@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :get_categories
   
   rescue_from CanCan::AccessDenied do |exception|
-    redirect_to root_url, :alert => exception.message
+    redirect_to unauthorized_url, :alert => exception.message
   end
   
   def get_categories

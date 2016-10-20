@@ -1,0 +1,14 @@
+<% if @view.to_i == 0 %>
+    You do not have permission to be here. Please do not come back.
+<% elsif @view.to_i == 1 %>
+    Did you not listen the first time? Please do not come back.
+<% elsif @view.to_i == 2 %>
+    Listen, this is the 3rd time you have come here. Please do not come back.
+<% elsif @view.to_i < 9 %>
+    Seriously you have come here <%= @view.to_i + 1 %> times. I will give you
+    <%= 9-@view.to_i %> more chances. If you come back you will have a bad time.
+<% else %>
+    Okay... it seems you are determined. One last warning. If you come back here.
+    You WILL have a bad time. But why am I trying to stop you? You obviously
+    WANT to have a bad time. So go ahead. Click Refresh. I warned you...
+<% end %>

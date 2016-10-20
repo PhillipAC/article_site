@@ -12,4 +12,16 @@ class PagesController < ApplicationController
     
     def contact
     end
+    
+    def unauthorized
+        @view = cookies[:view_count]
+        unless @view
+            @view = 0
+            cookies[:view_count] = @view
+        end
+        cookies[:view_count] = @view.to_i + 1
+        if cookies[:view_count].to_i > 10
+            redirect_to "http://www.youtube.com/watch?v=btndHOYkCJ0"
+        end
+    end
 end
